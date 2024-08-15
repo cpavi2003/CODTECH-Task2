@@ -7,6 +7,7 @@ Duration:AUGUST TO SEPTEMBER
 Mentor:Neela Santhosh Kumar
 
 Overview Of The Project
+![Screenshot (4)](https://github.com/user-attachments/assets/17c8927c-2a79-418e-ab1e-b9feb8fbcf27)
 
 Store Student Grades:
 A dictionary grades_dict is used to store student names as keys and their grades as a list.
