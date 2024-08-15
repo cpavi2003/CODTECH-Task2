@@ -1,0 +1,37 @@
+
+def calculate_average(grades):
+    return sum(grades) / len(grades)
+def determine_letter_grade(average):
+    if average >= 90:
+        return 'A'
+    elif average >= 80:
+        return 'B'
+    elif average >= 70:
+        return 'C'
+    elif average >= 60:
+        return 'D'
+    else:
+        return 'F'
+
+def manage_grades():
+    grades = []
+
+    while True:
+        grade = input("Enter grade (or type 'done' to finish): ")
+        if grade.lower() == 'done':
+            break
+        else:
+            grades.append(float(grade))
+
+    if grades:
+        average = calculate_average(grades)
+        letter_grade = determine_letter_grade(average)
+
+        print("\nGrades Summary:")
+        print(f"Grades: {grades}")
+        print(f"Average Grade: {average:.2f}")
+        print(f"Letter Grade: {letter_grade}")
+    else:
+        print("No grades were entered.")
+
+manage_grades()
